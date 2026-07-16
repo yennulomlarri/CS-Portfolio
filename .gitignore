@@ -1,0 +1,48 @@
+﻿# Compiled class files
+*.class
+target/
+out/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local configuration
+application.properties
+application-dev.properties
+application-local.properties
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Test output
+test-output/
