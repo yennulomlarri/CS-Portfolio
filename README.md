@@ -182,8 +182,3 @@ Mateiyendou Kombat
 git add README.md
 git commit -m "docs: Add WeatherApp README"
 git push origin main
-```
-
----
-
-Which version would you like to use? The comprehensive one or the quick one? Or would you like me to customize it further? 📝
