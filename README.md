@@ -1,144 +1,208 @@
-## Create WeatherApp README:
+## Create the main README.md:
 
 ```powershell
-# Navigate to the WeatherApp folder
-cd WeatherApp
+# Navigate to the root of CS-Portfolio
+cd C:\Users\hp\IdeaProjects\WeatherApp
 
-# Create README.md file
+# Create comprehensive README
 @"
-# ☀️ WeatherApp
+# 💻 CS-Portfolio
 
-A JavaFX-based weather application that fetches real-time weather data and maintains search history.
+Welcome to my Computer Science portfolio! This repository showcases various projects I've developed throughout my CS journey, demonstrating skills in Java, JavaFX, Maven, and software development principles.
 
-## 📋 Features
+## 📚 Table of Contents
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Technologies](#technologies)
+- [Project Highlights](#project-highlights)
+- [How to Run](#how-to-run)
+- [Contact](#contact)
 
-- **Real-time Weather Data**: Fetches current weather conditions for any city
-- **Temperature Units**: Toggle between Celsius (°C) and Fahrenheit (°F)
-- **Wind Speed Units**: Switch between km/h and mph
-- **Search History**: Automatically saves and displays previous searches
-- **User-Friendly Interface**: Clean and intuitive JavaFX UI
-- **Error Handling**: Graceful error handling with user alerts
+---
 
-## 🛠️ Technologies Used
+## 👨‍💻 About Me
 
-- **Java 17+** - Core programming language
+**Mateiyendou Kombat**  
+Computer Science Student | Software Developer
+
+Passionate about building practical applications and solving real-world problems through code. This portfolio represents my growth and learning in various areas of computer science.
+
+---
+
+## 🗂️ Projects
+
+### 🚀 Completed Projects
+
+| # | Project | Description | Technologies |
+|---|---------|-------------|--------------|
+| 1 | [WeatherApp](WeatherApp/) | Real-time weather application with JavaFX UI, temperature/wind speed toggles, and search history | Java, JavaFX, Maven, OpenWeatherMap API |
+| 2 | [Chat Application](Chat%20Application/) | Real-time chat system with client-server architecture | Java, Socket Programming |
+| 3 | [EcommerceSystem](EcommerceSystem/) | E-commerce platform with customer, product, and order management | Java, OOP |
+| 4 | [GenericLibraryCatalog](GenericLibraryCatalog/) | Library catalog system for managing books and resources | Java, Collections Framework |
+| 5 | [LibraryManager](LibraryManager/) | Library management system with book tracking | Java, OOP |
+| 6 | [QuizGame](QuizGame/) | Interactive quiz game application | Java |
+| 7 | [SimpleClockApp](SimpleClockApp/) | Digital clock application with real-time display | Java, JavaFX |
+| 8 | [StockDataAnalysis](StockDataAnalysis/) | Stock market data analysis tool | Java |
+| 9 | [StudentRecordSystem](StudentRecordSystem/) | Student record management system | Java, OOP |
+| 10 | [Unit1ProgrammingAssignment](Unit1ProgrammingAssignment/) | Programming assignment from Unit 1 | Java |
+| 11 | [VehicleInformationSystem](VehicleInformationSystem/) | Vehicle information management system | Java, OOP |
+
+---
+
+## 🛠️ Technologies
+
+### Languages & Frameworks
+- **Java 17+** - Primary programming language
 - **JavaFX** - Desktop application framework
-- **Maven** - Dependency management and build tool
-- **OpenWeatherMap API** - Weather data provider
+- **Maven** - Build automation and dependency management
 
-## 📁 Project Structure
+### Concepts & Tools
+- Object-Oriented Programming (OOP)
+- Socket Programming
+- API Integration
+- Git & GitHub
+- Collections Framework
+- File I/O Operations
 
-```
-WeatherApp/
-├── pom.xml                          # Maven configuration
-├── weather_history.txt              # Search history storage
-└── src/
-    └── main/
-        └── java/
-            └── com/
-                └── weatherapp/
-                    ├── Main.java                    # Application entry point
-                    ├── controller/
-                    │   └── WeatherController.java   # Main controller
-                    ├── model/
-                    │   └── WeatherData.java         # Weather data model
-                    └── service/
-                        └── HistoryManager.java      # History management
-```
+---
+
+## 🏆 Project Highlights
+
+### 🌤️ WeatherApp
+**Standout Features:**
+- Real-time weather data fetching
+- Celsius/Fahrenheit toggle
+- km/h/mph wind speed toggle
+- Search history tracking
+- Clean JavaFX UI
+
+**Technologies:** Java 17, JavaFX, Maven, OpenWeatherMap API
+
+---
+
+### 💬 Chat Application
+**Standout Features:**
+- Client-server architecture
+- Real-time messaging
+- Multi-client support
+
+**Technologies:** Java, Socket Programming, Threads
+
+---
+
+### 🛒 EcommerceSystem
+**Standout Features:**
+- Customer management
+- Product catalog
+- Order processing
+- OOP Design Patterns
+
+**Technologies:** Java, OOP Principles
+
+---
 
 ## 🚀 How to Run
 
 ### Prerequisites
-- Java 17 or higher
-- Maven 3.6+
+- Java 17 or higher ([Download](https://www.oracle.com/java/technologies/downloads/))
+- Maven 3.6+ ([Download](https://maven.apache.org/download.cgi))
+- Git ([Download](https://git-scm.com/downloads))
 
-### Steps
+### General Steps
 
-1. **Clone the repository**:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/yennulomlarri/CS-Portfolio.git
-   cd CS-Portfolio/WeatherApp
+   cd CS-Portfolio
    ```
 
-2. **Build the project**:
+2. **Navigate to any project:**
+   ```bash
+   cd ProjectName
+   ```
+
+3. **Build with Maven:**
    ```bash
    mvn clean compile
    ```
 
-3. **Run the application**:
+4. **Run the application:**
    ```bash
    mvn javafx:run
    ```
 
-4. **Alternatively, package and run**:
-   ```bash
-   mvn package
-   java -jar target/WeatherApp.jar
-   ```
+### Running Specific Projects
 
-## 🔧 Configuration
+**For JavaFX applications (WeatherApp):**
+```bash
+cd WeatherApp
+mvn javafx:run
+```
 
-### API Key Setup
-The application uses the OpenWeatherMap API. To run it:
+**For standard Java applications:**
+```bash
+cd ProjectName
+javac src/*.java
+java -cp src Main
+```
 
-1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
-2. Add your API key in `WeatherController.java`:
-   ```java
-   private static final String API_KEY = "YOUR_API_KEY_HERE";
-   ```
+---
 
-## 📖 Usage
+## 📊 Repository Statistics
 
-1. **Enter a city name** in the search field
-2. **Press Enter** or click the search button
-3. **View weather data** including:
-   - Temperature
-   - Weather conditions
-   - Humidity
-   - Wind speed
-4. **Toggle units** using the radio buttons:
-   - Celsius/Fahrenheit for temperature
-   - km/h/mph for wind speed
-5. **View search history** in the history panel
+- **Total Projects:** 11
+- **Lines of Code:** 1000+
+- **Last Updated:** July 2026
+- **Language:** Java 100%
 
-## 📸 Screenshots
-
-> *Screenshots coming soon*
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+This is a personal portfolio repository, but feel free to:
+- Fork the repository
+- Star ⭐ if you like it
+- Suggest improvements via Issues
+
+---
+
+## 📞 Contact
+
+**Mateiyendou Kombat**
+- GitHub: [@yennulomlarri](https://github.com/yennulomlarri)
+- Email: [Your Email Here]
+
+---
 
 ## 📝 License
 
-This project is part of the CS-Portfolio and is created for educational purposes.
+This project is for educational purposes and portfolio demonstration.
 
-## 👨‍💻 Author
-
-**Mateiyendou Kombat** - [GitHub](https://github.com/yennulomlarri)
+---
 
 ## 🙏 Acknowledgments
 
-- OpenWeatherMap for providing the weather API
-- JavaFX community for the excellent framework
+- All professors and mentors who guided my learning journey
+- Open source community for valuable resources
+- OpenWeatherMap for the weather API
 
 ---
-*Built with ❤️ as part of the CS-Portfolio*
+
+*Built with ❤️ as part of my Computer Science journey*
+
+---
+*Last Updated: July 2026*
 "@ | Out-File -FilePath README.md -Encoding utf8
 ```
 
-## Add and commit the README:
+## Add and commit the updated README:
 
 ```powershell
 # Add the README
 git add README.md
 
 # Commit
-git commit -m "docs: Add WeatherApp README documentation"
+git commit -m "docs: Update main README with comprehensive project overview"
 
 # Push to GitHub
 git push origin main
@@ -146,39 +210,11 @@ git push origin main
 
 ---
 
-## Quick Version (Minimal README):
-
-If you prefer a shorter version:
+## Quick Verification:
 
 ```powershell
-cd WeatherApp
+# Check the status
+git status
 
-@"
-# WeatherApp
-
-JavaFX weather application with real-time data and search history.
-
-## Features
-- Real-time weather data
-- Celsius/Fahrenheit toggle
-- km/h/mph wind speed toggle
-- Search history tracking
-
-## Run
-\`\`\`bash
-mvn javafx: run
-\`\`\`
-
-## Technologies
-- Java 17+
-- JavaFX
-- Maven
-- OpenWeatherMap API
-
-## Author
-Mateiyendou Kombat
-"@ | Out-File -FilePath README.md -Encoding utf8
-
-git add README.md
-git commit -m "docs: Add WeatherApp README"
-git push origin main
+# See the README content
+cat README.md
