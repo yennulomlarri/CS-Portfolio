@@ -2,6 +2,7 @@
 *.class
 target/
 out/
+bin/
 
 # IDE files
 .idea/
@@ -12,6 +13,7 @@ out/
 .settings/
 .project
 .classpath
+*.code-workspace
 
 # Maven
 pom.xml.tag
@@ -31,6 +33,7 @@ logs/
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Local configuration
 application.properties
@@ -43,6 +46,19 @@ application-local.properties
 *.swp
 *.swo
 *~
+*.bak
 
 # Test output
 test-output/
+target/
+surefire-reports/
+
+# General
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+native/
